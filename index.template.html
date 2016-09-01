@@ -1,0 +1,23 @@
+{% extends "base.template.html" %}
+
+{% block content %}
+
+<div id='cards'>
+	{% for card in cards %}
+	<div>
+		{% if card.link %}<a href="{{ card.link }}">{% endif %}
+			<img src="{{ card.image }}" alt="{{ card.text }}" />
+		{% if card.link %}</a>{% endif %}
+	</div>
+	{% endfor %}
+</div>
+
+<div id='links'>
+	<a href='https://twitter.com/nateparrott'><span class='fa fa-twitter'></span></a>
+	<a href='https://github.com/nate-parrott'><span class='fa fa-github'></span></a>
+	<a href='https://dribbble.com/nateparrott'><span class='fa fa-dribbble'></span></a>
+	<a href='mailto:nate@nateparrott.com'><span class='fa fa-envelope'></span></a>
+	<a href='https://m.me/parro2t'><span class='fa fa-facebook-square'></span></a>
+</div>
+
+{% endblock %}

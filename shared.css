@@ -1,0 +1,78 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: sans-serif;
+}
+
+#cards {
+	height: 100%;
+	display: table;
+}
+
+#cards > div {
+	padding: 1.5em;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+#cards > div img {
+	height: 90vh;
+	max-height: 500px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+	border-radius: 3px;
+	transition: box-shadow 0.15s ease-in-out;
+	-webkit-transition: box-shadow 0.15s ease-in-out;
+}
+
+#cards > div img:hover {
+	box-shadow: 0px 4px 20px rgba(0,0,0,0.7);
+}
+
+@media screen and (max-width: 500px) {
+	#cards > div:before {
+		content: "";
+		width: 100vw;
+		margin-left: -3em; /* erase the padding, so the cell is actually 100vw */
+		display: block;
+	}
+}
+
+@media screen and (min-width: 501px) {
+	#cards > div:first-child {
+		padding-left: 3em;
+	}
+
+	#cards > div:last-child {
+		padding-right: 3em;
+	}
+}
+
+#links {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	background-color: rgba(255,255,255,0.7);
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#links a {
+	color: #777;
+	text-decoration: none;
+	display: inline-block;
+	margin: 14px;
+}
+
+#links a:hover {
+	color: #333;
+}
+
+@media screen and (max-height: 600px) {
+	#links a {
+		margin: 6px;
+	}
+}
