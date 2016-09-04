@@ -35,6 +35,11 @@
 			"text": "A while ago, I made an app called Gerbil – it replaced a mouse by letting you use an iPhone to control a computer from across the room.\nClick to visit the website"
 		},
 		{
+			"image": "wtfbrown.png",
+			"link": "http://wtfbrown.42pag.es/",
+			"text": "WTF Brown Redesign\nFor a class project, we envisioned a refresh of Brown University’s website for soliciting student feedback. We introduced the idea of sticking post-its on physical spaces that had issues, and linking them to tickets in a redesigned mobile app."
+		},
+		{
 			"image": "instagrade.png",
 			"link": "http://instagradeapp.com",
 			"text": "I designed and built an app called InstaGrade that let teachers create multiple-choice tests, print them out, and then automatically grade them by pointing their iPhone’s camera at answer sheets.\nClick to read more"
